@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 config_android:
   docker:
   - image: circleci/android:api-30
@@ -83,7 +83,7 @@ jobs:
     - store_artifacts:
         path: firebase_test_results
 workflows:
-  version: 2
+  version: 2.1
   build_and_test:
     jobs:
     - build_and_setup
