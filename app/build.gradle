@@ -2,7 +2,8 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: "androidx.navigation.safeargs.kotlin"
-apply plugin: "com.google.gms.google-services"
+apply plugin: 'com.google.gms.google-services'
+//apply plugin: "com.google.gms.google-services"
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
@@ -26,6 +27,14 @@ android {
         enabled = true
         enabledForTests = true
     }
+//    task copyAPKtoAsset(type: Copy) {
+//        from ""
+//        into "app/src/main/assets"
+//    }
+//
+//    afterEvaluate {
+//        packageDebug.finalizedBy(copyAPKtoAsset)
+//    }
 }
 
 dependencies {
@@ -40,11 +49,12 @@ dependencies {
     implementation "com.jakewharton.timber:timber:$timberVersion"
 
     // firebase
-    implementation platform('com.google.firebase:firebase-bom:31.0.0')
-    implementation 'com.google.firebase:firebase-analytics-ktx'
+//    implementation platform('com.google.firebase:firebase-bom:31.0.0')
+//    implementation 'com.google.firebase:firebase-analytics-ktx'
 
     // Architecture Components
     implementation "androidx.room:room-runtime:$roomVersion"
+    implementation 'com.google.firebase:firebase-analytics-ktx:21.2.0'
     kapt "androidx.room:room-compiler:$roomVersion"
     implementation "androidx.room:room-ktx:$roomVersion"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$archLifecycleVersion"

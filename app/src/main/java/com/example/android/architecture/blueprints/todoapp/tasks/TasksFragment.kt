@@ -41,6 +41,7 @@ import timber.log.Timber
 /**
  * Display a grid of [Task]s. User can choose to view all, active or completed tasks.
  */
+@Suppress("DEPRECATION")
 class TasksFragment : Fragment() {
 
     private val viewModel by viewModels<TasksViewModel>()
