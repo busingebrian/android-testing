@@ -33,35 +33,6 @@
           ]
         }
       }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:323032674976:android:19cc8b08551e46749acfc5",
-        "android_client_info": {
-          "package_name": "com.example.android.architecture.blueprints.todoapp"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "323032674976-dqn2qi1e5b2aslmqm7gir86h3e99hu6h.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyA5r3b9VaB9zmyo_F0OvK5Ecw8XxXxdU-s"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "323032674976-dqn2qi1e5b2aslmqm7gir86h3e99hu6h.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
     }
   ],
   "configuration_version": "1"
