@@ -49,7 +49,7 @@ jobs:
         - ./app/build
   run_ftl:
     docker:
-    - image: circleci/android:api-28
+    - image: circleci/android:api-30
     working_directory: ~/project
     environment:
     - JAVA_TOOL_OPTIONS: -Xmx1024m
