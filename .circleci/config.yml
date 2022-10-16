@@ -32,7 +32,7 @@ jobs:
           path: app/build/test-results
       - run:
           name: Assemble APKs
-          command: ./gradlew assembleDebug assembleAndroidTest assemble
+          command: ./gradlew assembleDebug assembleAndroidTest
       - run:
           name: Dump Google Cloud Credentials to file
           command: echo ${GOOGLE_AUTH} > ${HOME}/gcp-key.json
