@@ -32,7 +32,9 @@ jobs:
           command: ./gradlew assembleDebug assembleAndroidTest
       - run:
           name: Dump Google Cloud Credentials to file
-          command: echo ${GOOGLE_AUTH} > ${HOME}/gcp-key.json
+          command: echo ${GOOGLE_AUTH} > $gcloud iam service-accounts keys list \
+    --iam-account=my-service-account@my-project.iam.gserviceaccount.com \
+    --filter="name~c97cc34494c07c9b483701f28368f20145b9ef97" --format=json{HOME}/gcp-key.json
       - run: gcloud auth activate-service-account --key-file ${HOME}/gcp-key.json
       - run: gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
       - run:
