@@ -3,7 +3,6 @@ jobs:
   build:
     docker:
       - image: circleci/android:api-30
-
     working_directory: ~/repo
 
     environment:
